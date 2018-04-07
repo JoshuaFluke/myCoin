@@ -99,7 +99,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract Contract is ERC20Interface, Owned, SafeMath {
+contract JoshContract is ERC20Interface, Owned, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -112,13 +112,13 @@ contract Contract is ERC20Interface, Owned, SafeMath {
     // ------------------------------------------------------------------------
     // Constructor
     // ------------------------------------------------------------------------
-    function Contract() public {
-        symbol = "";
-        name = "";
+    function JoshContract() public {
+        symbol = "DEVL";
+        name = "Developer Life";
         decimals = 18;
-        _totalSupply = 50000000000000000000000;
-        balances[0xa0c5B4096ed3395Eb6425E0704936A7e413CF0e7] = _totalSupply; //MEW address here
-        Transfer(address(0), 0xa0c5B4096ed3395Eb6425E0704936A7e413CF0e7, _totalSupply);//MEW address here
+        _totalSupply = 5000000000000000000000000;
+        balances[0x9Fd419c21D714991813BAEdC882f066F87ce3E2d] = _totalSupply; //MEW address here
+        Transfer(address(0), 0x9Fd419c21D714991813BAEdC882f066F87ce3E2d, _totalSupply);//MEW address here
     }
 
 
